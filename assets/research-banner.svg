@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Fakhruddin Hakim Hussain: quantitative research and data science">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b162a"/><stop offset="1" stop-color="#132c43"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#6aa8b9" stroke-opacity=".10"/></pattern></defs>
+<rect width="1200" height="300" rx="18" fill="url(#bg)"/><rect width="1200" height="300" rx="18" fill="url(#grid)"/>
+<path d="M800 218C845 205 845 110 890 112S925 213 963 175 1000 42 1040 98 1090 200 1165 73" fill="none" stroke="#65dec7" stroke-width="3" opacity=".8"/>
+<path d="M800 225C865 219 876 146 917 147S965 207 1008 165 1085 104 1165 121" fill="none" stroke="#94b6d1" stroke-width="2" opacity=".45"/>
+<rect x="48" y="42" width="6" height="28" rx="3" fill="#65dec7"/>
+<text x="72" y="64" fill="#65dec7" font-family="Arial,sans-serif" font-size="16" letter-spacing="3">MODELLING · EVIDENCE · DECISIONS</text>
+<text x="48" y="128" fill="#f2f6fa" font-family="Arial,sans-serif" font-size="39" font-weight="700">Fakhruddin Hakim Hussain</text>
+<text x="50" y="173" fill="#c1d5e5" font-family="Arial,sans-serif" font-size="24">Quantitative research &amp; data science</text>
+<text x="50" y="238" fill="#97b1c6" font-family="Arial,sans-serif" font-size="16">EDINBURGH · IIT KHARAGPUR</text>
+</svg>
