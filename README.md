@@ -1,6 +1,6 @@
 <img src="assets/research-banner.svg" alt="Fakhruddin Hakim Hussain — Quantitative research and data science" width="100%">
 
-I use statistics, mathematical modelling and machine learning to study noisy data and make better predictions. My work spans **volatility modelling, energy forecasting, credit risk and Bayesian inference**.
+I use statistics, mathematical modelling and machine learning to study noisy data and make better predictions. My work spans **cost-aware trading research, volatility modelling, energy forecasting, credit risk and Bayesian inference**.
 
 **University of Edinburgh** · MSc Statistics with Data Science, 2025–2026  
 **IIT Kharagpur** · Integrated MSc Chemistry, 2024  
@@ -12,6 +12,7 @@ Previous experience includes data science at **Swiggy** and **PUMA**, and quanti
 
 | Quantitative research | Data science |
 |:---|:---|
+| [**BTC/ETH spot-futures carry**](https://github.com/Fakhruddin12/btc-funding-carry) — execution costs, collateral accounting and risk validation | [**Ride-hailing simulation**](https://github.com/Fakhruddin12/ride-hailing-simulation) — demand, driver supply and service-system modelling |
 | [**Local-volatility calibration**](https://github.com/Fakhruddin12/operator-regularized-dupire) — PDE pricing, inverse problems and controlled regularizer comparisons | [**GridPulse**](https://github.com/Fakhruddin12/gridpulse) — day-ahead electricity-demand forecasting and chronological evaluation |
 | [**HMM volatility forecasting**](https://github.com/Fakhruddin12/hmm-regime-volatility-forecasting) — hidden-state inference implemented from scratch | [**ClearCredit**](https://github.com/Fakhruddin12/clearcredit) — default-risk ranking, calibration and SQL feature engineering |
 | [**Bayesian river modelling**](https://github.com/Fakhruddin12/bayesian-river-water-quality) — censored likelihoods and interpretable source models | [**Auction-price prediction**](https://github.com/Fakhruddin12/auction-price-prediction) — messy data, categorical modelling and error analysis |
@@ -20,6 +21,7 @@ Previous experience includes data science at **Swiggy** and **PUMA**, and quanti
 
 | Project | Question | Finding and evidence |
 |:---|:---|:---|
+| **BTC/ETH carry** | When does a futures premium justify trading after costs and cash opportunity cost? | **19.35% net backtest return vs 16.81% always-on**, **0.93 cash-excess Sharpe**, **0.68% hourly-NAV drawdown** and **66.8% lower trading costs** over Jan 2023–Jun 2026. Returns include cash interest; retrospective simulation. [Results and definitions](https://github.com/Fakhruddin12/btc-funding-carry/blob/master/relative_value/docs/CV_RISK_METRICS.md) |
 | **GridPulse** | Can a simple model compete with a neural forecast? | Ridge achieved **1,164 MW holdout MAE**, **43.3% below** the weekly baseline; it also beat the TCN on validation. [Metrics](https://github.com/Fakhruddin12/gridpulse/blob/master/reports/metrics.json) |
 | **ClearCredit** | How well can default risk be ranked and calibrated? | Calibrated LightGBM achieved **0.547 average precision** and **0.774 ROC-AUC** on a held-out historical sample. [Metrics](https://github.com/Fakhruddin12/clearcredit/blob/master/reports/uci/metrics.json) |
 | **Auction prices** | How much do nonlinear models help with mixed currencies and sparse specifications? | CatBoost reduced test MedAPE from **40.2% to 32.0%**. [Study](https://github.com/Fakhruddin12/auction-price-prediction/blob/master/reports/RESULTS.md) |
