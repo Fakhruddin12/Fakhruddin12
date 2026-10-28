@@ -1,41 +1,30 @@
 <img src="assets/research-banner.svg" alt="Fakhruddin Hakim Hussain — Quantitative research and data science" width="100%">
 
-I use statistics, mathematical modelling and machine learning to study noisy data and make better predictions. My work spans **cost-aware trading research, volatility modelling, energy forecasting, credit risk and Bayesian inference**.
+I am a data scientist with around one year of professional experience and an **MSc in Statistics with Data Science, with Merit, from the University of Edinburgh**. My projects use statistics, numerical modelling and machine learning to investigate forecasting, financial risk and trading questions.
 
-**University of Edinburgh** · MSc Statistics with Data Science, 2025–2026  
-**IIT Kharagpur** · Integrated MSc Chemistry, 2024  
-Previous experience includes data science at **Swiggy** and **PUMA**, and quantitative research at **AR Quants**.
+Previously, I worked on delivery staffing, customer-order forecasting and rider incentives at **Swiggy**, a food-delivery business, and promotion-planning models at **PUMA**. My earlier degree is an Integrated MSc in Chemistry from IIT Kharagpur. I am based in Bengaluru, India.
 
-[Email](mailto:Fakhruddin.h.h@gmail.com) · [All projects](PROJECTS.md) · [Research approach](RESEARCH_APPROACH.md)
+[Email](mailto:fakhruddin.h.h@gmail.com) · [All projects](PROJECTS.md) · [How I evaluate research](RESEARCH_APPROACH.md)
 
-## Start with the work closest to your role
+## Start with a question
 
-| Quantitative research | Data science |
-|:---|:---|
-| [**BTC/ETH spot-futures carry**](https://github.com/Fakhruddin12/btc-funding-carry) — execution costs, collateral accounting and risk validation | [**Ride-hailing simulation**](https://github.com/Fakhruddin12/ride-hailing-simulation) — demand, driver supply and service-system modelling |
-| [**Local-volatility calibration**](https://github.com/Fakhruddin12/operator-regularized-dupire) — PDE pricing, inverse problems and controlled regularizer comparisons | [**GridPulse**](https://github.com/Fakhruddin12/gridpulse) — day-ahead electricity-demand forecasting and chronological evaluation |
-| [**HMM volatility forecasting**](https://github.com/Fakhruddin12/hmm-regime-volatility-forecasting) — hidden-state inference implemented from scratch | [**ClearCredit**](https://github.com/Fakhruddin12/clearcredit) — default-risk ranking, calibration and SQL feature engineering |
-| [**Bayesian river modelling**](https://github.com/Fakhruddin12/bayesian-river-water-quality) — censored likelihoods and interpretable source models | [**Auction-price prediction**](https://github.com/Fakhruddin12/auction-price-prediction) — messy data, categorical modelling and error analysis |
+| Project | What I investigated | Main finding |
+|---|---|---|
+| [**BTC/ETH spot–futures carry**](https://github.com/Fakhruddin12/btc-funding-carry) | When does a futures premium pay for trading costs and holding capital? | 19.35% simulated net return versus 16.81% for entering every eligible contract, including cash interest. |
+| [**GridPulse: electricity demand**](https://github.com/Fakhruddin12/gridpulse) | Can past demand predict tomorrow's hourly electricity needs? | Average test error fell 43.3% versus copying the same hour from the previous week. |
+| [**ClearCredit: repayment-history risk**](https://github.com/Fakhruddin12/clearcredit) | Do ordered repayment histories improve default-risk predictions? | GRU ranked 50.6% of defaults in the highest-risk 20% of accounts; its advantage over boosted trees was small. |
+| [**Used-tractor prices — MSc dissertation**](https://github.com/Fakhruddin12/auction-price-prediction) | How much can cleaned auction records tell us about sale prices? | Median percentage error fell from 40.2% to 32.0% against quadratic regression. |
+| [**River pollution — MSc dissertation**](https://github.com/Fakhruddin12/bayesian-river-water-quality) | How do direct-discharge and runoff contributions change over time? | Hierarchical time-varying models helped zinc and orthophosphate predictions, but not every pollutant. |
+| [**Option-price calibration**](https://github.com/Fakhruddin12/operator-regularized-dupire) | Does an adaptive penalty recover volatility more reliably from sparse quotes? | Some pricing gains, but unstable known-volatility recovery and weaker performance on some unseen expiries. |
 
-## Selected findings
-
-| Project | Question | Finding and evidence |
-|:---|:---|:---|
-| **BTC/ETH carry** | When does a futures premium justify trading after costs and cash opportunity cost? | **19.35% net backtest return vs 16.81% always-on**, **0.93 cash-excess Sharpe**, **0.68% hourly-NAV drawdown** and **66.8% lower trading costs** over Jan 2023–Jun 2026. Returns include cash interest; retrospective simulation. [Results and definitions](https://github.com/Fakhruddin12/btc-funding-carry/blob/master/relative_value/docs/CV_RISK_METRICS.md) |
-| **GridPulse** | Can a simple model compete with a neural forecast? | Ridge achieved **1,164 MW holdout MAE**, **43.3% below** the weekly baseline; it also beat the TCN on validation. [Metrics](https://github.com/Fakhruddin12/gridpulse/blob/master/reports/metrics.json) |
-| **ClearCredit** | How well can default risk be ranked and calibrated? | Calibrated LightGBM achieved **0.547 average precision** and **0.774 ROC-AUC** on a held-out historical sample. [Metrics](https://github.com/Fakhruddin12/clearcredit/blob/master/reports/uci/metrics.json) |
-| **Auction prices** | How much do nonlinear models help with mixed currencies and sparse specifications? | CatBoost reduced test MedAPE from **40.2% to 32.0%**. [Study](https://github.com/Fakhruddin12/auction-price-prediction/blob/master/reports/RESULTS.md) |
-| **HMM volatility** | Does separating regimes improve forward-volatility forecasts? | **11.69% lower RMSE** than a historical-volatility baseline; the extra benefit over a global random forest was small. [Daily and weekly checks](https://github.com/Fakhruddin12/hmm-regime-volatility-forecasting/blob/main/docs/RESULTS.md) |
-| **Inverse Dupire** | Does an adaptive penalty improve local-volatility recovery? | A **50-fold comparison** found mixed pricing results and unstable known-truth recovery. [Full evidence](https://github.com/Fakhruddin12/operator-regularized-dupire/blob/main/docs/RESULTS.md) |
-| **Bayesian river models** | How should below-detection measurements and changing pollution sources be modelled? | Adding flow improved held-out likelihood in **18 of 23 series** in the dissertation. [Results and reproduction status](https://github.com/Fakhruddin12/bayesian-river-water-quality/blob/master/README.md) |
+Each repository begins with the problem and result, then links to model details, evaluation and code. Results are labelled as simulations, historical report findings or executed prediction studies as appropriate. The [full index](PROJECTS.md) also covers market-state volatility forecasting, ride-hailing simulation, statistical coursework and earlier machine-learning notebooks.
 
 ## How I work
 
-I start with a clear question, compare against a useful baseline, keep evaluation data separate from model selection, and inspect where the model fails. I document negative results alongside positive ones: a more complex model has to earn its place.
+I start with a useful baseline and make the prediction target explicit. Then I check whether the extra model complexity helps, examine where it fails and keep the result traceable to evidence. In the credit-risk study, for example, adding deep learning led to a useful failure analysis rather than a claim that neural networks clearly beat trees.
 
-**Languages:** Python · R · SQL · C++  
-**Methods:** time series · Bayesian inference · statistical learning · numerical optimisation · stochastic simulation  
-**Tools:** NumPy · pandas · SciPy · scikit-learn · PyTorch · LightGBM · CatBoost · brms/Stan · DuckDB · Git  
-**Industry tools:** Databricks · Snowflake
+**Programming:** Python · R · SQL · C++  
+**Methods:** time series · Bayesian inference · machine learning · numerical optimisation · stochastic simulation  
+**Tools:** NumPy · pandas · SciPy · scikit-learn · PyTorch · LightGBM · CatBoost · brms/Stan · DuckDB · Git · Databricks · Snowflake
 
-I am interested in **quantitative research and data science opportunities** where careful modelling, sound evaluation and clear communication matter.
+I am interested in **quantitative research and data science roles** where careful analysis and collaboration turn models into useful decisions.

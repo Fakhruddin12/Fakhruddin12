@@ -1,23 +1,24 @@
-# Complete project index
+# Project Index
 
-The featured projects are selected for depth and relevance. This index also keeps the supporting academic and earlier work visible.
+Choose a question first; the linked README introduces the work before its technical details. Evidence and reproduction limits are kept visible so reported results are not mistaken for newly rerun experiments or live business outcomes.
 
-| Project | Methods | Evidence / status |
+| Project | Question and my work | Evidence to inspect |
 |---|---|---|
-| [**Inverse Dupire calibration**](https://github.com/Fakhruddin12/operator-regularized-dupire) | Python · PDEs · regularisation | Audited numerical research; current benchmark and historical experiments separated |
-| [**HMM forward-volatility forecasting**](https://github.com/Fakhruddin12/hmm-regime-volatility-forecasting) | Python · HMM · random forests | Executed notebook, causal filtering, purged split and non-overlapping evaluation |
-| [**GridPulse: electricity-demand forecasting**](https://github.com/Fakhruddin12/gridpulse) | Python · Ridge · TCN | Saved chronological benchmark, CLI, API demonstration and tests |
-| [**ClearCredit: credit-risk modelling**](https://github.com/Fakhruddin12/clearcredit) | Python · LightGBM · SQL | Measured UCI benchmark; separate Home Credit extension |
-| [**Bayesian river water-quality modelling**](https://github.com/Fakhruddin12/bayesian-river-water-quality) | R · brms/Stan · GAMs | Dissertation and model code; original import helpers and frozen input snapshot required |
-| [**Auction-price prediction**](https://github.com/Fakhruddin12/auction-price-prediction) | Python · CatBoost · tabular ML | Executed notebooks and dissertation; source dataset supplied separately |
-| [**BTC/ETH spot-futures carry research**](https://github.com/Fakhruddin12/btc-funding-carry) | Python · inverse futures · execution · cash/coin accounting | 44-contract study; 19.35% net backtest return vs 16.81% always-on, 0.93 cash-excess Sharpe, 0.68% hourly-NAV drawdown; verified inputs, 31 tests and explicit retrospective evaluation |
-| [**Ride-hailing service simulation**](https://github.com/Fakhruddin12/ride-hailing-simulation) | Python · discrete-event simulation | Academic team implementation; executable smoke run and explicit model units |
-| [**Statistical modelling studies**](https://github.com/Fakhruddin12/statistical-modelling-studies) | R · splines · networks · Bayesian GLMM | Three academic team studies with contribution and input notes |
-| [**Earlier machine-learning work**](https://github.com/Fakhruddin12/Machine-Learning-Projects) | Python · regression · NLP | Historical notebooks: pairs discovery, Hangman and supervised-learning exercises |
+| [BTC/ETH spot–futures carry](https://github.com/Fakhruddin12/btc-funding-carry) | Test whether futures premiums pay for execution, collateral and cash opportunity cost. | 44-contract backtest, cost/risk accounting, input hashes and 31 tests. |
+| [Option-price / Dupire calibration](https://github.com/Fakhruddin12/operator-regularized-dupire) | Fit a volatility surface from sparse prices and test location-dependent penalties. | 50-fold audit, pricing and known-truth recovery checks, including failures. |
+| [Volatility across market states](https://github.com/Fakhruddin12/hmm-regime-volatility-forecasting) | Build hidden-state inference from scratch and compare next-five-day volatility forecasts. | Causal state filtering, chronological labels and non-overlapping test controls. |
+| [GridPulse: tomorrow's electricity demand](https://github.com/Fakhruddin12/gridpulse) | Compare regression and neural forecasts of 24 hourly demand values. | Three validation windows, later test, peak-hour errors and interval coverage. |
+| [ClearCredit: default-risk research](https://github.com/Fakhruddin12/clearcredit) | Compare financial-history models and inspect which defaults a review queue misses. | Current GRU/tree study, independent calibration, subgroup and sensitivity analysis; earlier workflow retained. |
+| [River pollution — MSc dissertation](https://github.com/Fakhruddin12/bayesian-river-water-quality) | Estimate changing discharge/runoff contributions with nonlinear hierarchical Bayesian models. | Dissertation Table 5 and full pollutant comparison; archived code differs from the final model and needs restored inputs. |
+| [Used-tractor prices — MSc dissertation](https://github.com/Fakhruddin12/auction-price-prediction) | Construct a clean auction-sale sample and test nonlinear price models. | Executed notebooks, 3,429 test sales and rare-series error analysis; source listings required for retraining. |
+| [Ride-hailing simulation](https://github.com/Fakhruddin12/ride-hailing-simulation) | Co-build an event-driven passenger/driver system and measure service outcomes. | Executable example, unit conventions and team authorship; not a calibrated city forecast. |
+| [Statistical modelling coursework](https://github.com/Fakhruddin12/statistical-modelling-studies) | Team studies of delayed infection signals, contact networks and multilevel associations. | R source, contribution records and study-specific input limits. |
+| [Earlier machine-learning notebooks](https://github.com/Fakhruddin12/Machine-Learning-Projects) | Learning projects in classification, regression, language modelling and pairs discovery. | Seven folder guides; historical results are not promoted as current validated benchmarks. |
 
-## Suggested reading order
+## Suggested routes
 
-**Quantitative research:** BTC/ETH carry → Dupire → HMM → Bayesian river models → simulation.  
-**Data science:** GridPulse → ClearCredit → auction prices → Bayesian river models → statistical studies.
+**Quantitative research:** carry trading → option-price calibration → volatility forecasting → Bayesian river models.  
+**Data science:** credit risk → electricity demand → auction prices → Bayesian river models.  
+**Statistics:** Bayesian river models → statistical coursework → simulation.
 
-The earlier machine-learning repository contains seven folders: breast-cancer classification, vehicle fuel-economy regression, house-price regression, movie-revenue prediction, pairs discovery, the original volatility experiment and a Hangman language model. The dedicated HMM repository supersedes the original volatility experiment.
+The earlier volatility notebook is superseded by the dedicated forward-volatility study. The Home Credit SQL extension is separate from the measured UCI credit-card experiments and has not been fully benchmarked.
