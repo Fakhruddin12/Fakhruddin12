@@ -11,7 +11,7 @@ A model is useful only if the question, comparison and evidence support the inte
 
 ## Examples
 
-- [ClearCredit](https://github.com/Fakhruddin12/clearcredit): a GRU was selected on development data, but its reporting advantage over trees was small. The more useful finding was its weakness at warning of defaults before a recent delay was visible.
+- [ClearCredit](https://github.com/Fakhruddin12/clearcredit): full-history LightGBM captured 51.1% of defaults versus 48.0% using latest-month inputs at the same review workload. The GRU had no clear capture advantage over the tree model. A separate subgroup analysis also distinguished low recall under a global review threshold from the ability to rank accounts within that subgroup. These results remain retrospective.
 - [Volatility forecasting](https://github.com/Fakhruddin12/hmm-regime-volatility-forecasting): the model beat a simple historical forecast, but one random forest was nearly as good as the regime-specific models.
 - [Option-price calibration](https://github.com/Fakhruddin12/operator-regularized-dupire): lower pricing error in some comparisons did not imply reliable recovery of the true volatility surface.
 - [River modelling](https://github.com/Fakhruddin12/bayesian-river-water-quality): changing source terms improved some pollutants and made ammonia predictions worse, so a single preferred model for every pollutant was not justified.

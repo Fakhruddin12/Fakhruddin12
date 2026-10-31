@@ -12,7 +12,7 @@ Previously, I worked on delivery staffing, customer-order forecasting and rider 
 |---|---|---|
 | [**BTC/ETH spot–futures carry**](https://github.com/Fakhruddin12/btc-funding-carry) | When does a futures premium pay for trading costs and holding capital? | 19.35% simulated net return versus 16.81% for entering every eligible contract, including cash interest. |
 | [**GridPulse: electricity demand**](https://github.com/Fakhruddin12/gridpulse) | Can past demand predict tomorrow's hourly electricity needs? | Average test error fell 43.3% versus copying the same hour from the previous week. |
-| [**ClearCredit: repayment-history risk**](https://github.com/Fakhruddin12/clearcredit) | Do ordered repayment histories improve default-risk predictions? | GRU ranked 50.6% of defaults in the highest-risk 20% of accounts; its advantage over boosted trees was small. |
+| [**ClearCredit: repayment-history risk**](https://github.com/Fakhruddin12/clearcredit) | How much does repayment history add beyond the latest account record? | In the historical comparison, LightGBM captured 51.1% of defaults versus 48.0% with latest-month inputs, at the same 20% review workload. |
 | [**Used-tractor prices — MSc dissertation**](https://github.com/Fakhruddin12/auction-price-prediction) | How much can cleaned auction records tell us about sale prices? | Median percentage error fell from 40.2% to 32.0% against quadratic regression. |
 | [**River pollution — MSc dissertation**](https://github.com/Fakhruddin12/bayesian-river-water-quality) | How do direct-discharge and runoff contributions change over time? | Hierarchical time-varying models helped zinc and orthophosphate predictions, but not every pollutant. |
 | [**Option-price calibration**](https://github.com/Fakhruddin12/operator-regularized-dupire) | Does an adaptive penalty recover volatility more reliably from sparse quotes? | Some pricing gains, but unstable known-volatility recovery and weaker performance on some unseen expiries. |
@@ -21,7 +21,7 @@ Each repository begins with the problem and result, then links to model details,
 
 ## How I work
 
-I start with a useful baseline and make the prediction target explicit. Then I check whether the extra model complexity helps, examine where it fails and keep the result traceable to evidence. In the credit-risk study, for example, adding deep learning led to a useful failure analysis rather than a claim that neural networks clearly beat trees.
+I start with a useful baseline and make the prediction target explicit. Then I check whether the extra model complexity helps, examine where it fails and keep the result traceable to evidence. In the credit-risk study, matched-workload comparisons showed the value of repayment history, while targeted controls found no clear capture advantage from recurrence over a tree model.
 
 **Programming:** Python · R · SQL · C++  
 **Methods:** time series · Bayesian inference · machine learning · numerical optimisation · stochastic simulation  
